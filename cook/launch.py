@@ -5,7 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 
-llm = ChatOllama(model="deepseek-r1:14b")
+llm = ChatOllama(model="deepseek-r1:7b")
 
 # Update the template based on the type of SQL Database like MySQL, Microsoft SQL Server and so on
 template = """Based on the table schema below, write a SQL query that would answer the user's question:
